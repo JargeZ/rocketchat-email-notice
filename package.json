@@ -1,0 +1,22 @@
+{
+  "name": "rockatchat-mail-notice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/imap-simple": "^4.2.2",
+    "@types/lodash": "^4.14.159",
+    "@types/mailparser": "^2.7.3",
+    "@types/node": "^14.0.27",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "html-to-text": "^5.1.1",
+    "iconv-lite": "^0.6.2",
+    "imap-simple": "^5.0.0",
+    "lodash": "^4.17.20",
+    "mailparser": "^2.8.1"
+  }
+}
