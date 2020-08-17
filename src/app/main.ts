@@ -1,9 +1,16 @@
 import {ImapSimple, ImapSimpleOptions} from "imap-simple";
 import imaps from "imap-simple";
 import {ParsedMail, simpleParser} from "mailparser";
-import {notifyConfig, imapConfig} from "./config"
-import _ from "lodash";
 import {myLog} from "./logger"
+try {
+    require("../config/config")
+} catch (e) {
+    console.log("ERROR: Can't import config.js");
+    console.log(`if you use Docker, check  -v "$PWD/config":/home/node/config`);
+    process.exit(1);
+}
+import {notifyConfig, imapConfig} from "../config/config"
+import _ from "lodash";
 import {sendMailToRocketChat} from "./rc";
 
 let imapConnection: ImapSimple;

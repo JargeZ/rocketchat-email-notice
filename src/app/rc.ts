@@ -1,4 +1,4 @@
-import {IemailData, notifyConfig, RC_HOOK_URL} from "./config";
+import {IemailData, notifyConfig, RC_HOOK_URL} from "../config/config";
 import axios from "axios";
 import {Imail} from "./main";
 import {myLog} from "./logger";

@@ -1,6 +1,6 @@
-export const RC_HOOK_URL = 'https://chat.site.ru/hooks/HxS4F/ZExrP7PRMWEqFTcyFhejYgoz'
+exports.RC_HOOK_URL = 'https://chat.site.ru/hooks/HxS4F/ZExrP7PRMWEqFTcyFhejYgoz'
 
-export const imapConfig = {
+exports.imapConfig = {
     user: 'example@site.ru',
     password: 'p@ssword',
     host: 'mail.site.ru',
@@ -14,7 +14,7 @@ export const imapConfig = {
     authTimeout: 3000
 }
 
-export const notifyConfig = {
+exports.notifyConfig = {
     "jargez@site.ru": (HTMLBody) => {
         // perform any action and return object
         return {
